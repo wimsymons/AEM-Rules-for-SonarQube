@@ -53,8 +53,7 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<sonar-plugin-api-version>3.7.3</sonar-plugin-api-version>
-		<sonar.version>4.5.4</sonar.version>
+		<sonar.version>5.0</sonar.version>
 	</properties>
 
 	<repositories>
@@ -68,7 +67,7 @@
 		<dependency>
 			<groupId>org.codehaus.sonar</groupId>
 			<artifactId>sonar-plugin-api</artifactId>
-			<version>4.5.4</version>
+			<version>${sonar.version}</version>
 			<scope>provided</scope>
 		</dependency>
 
@@ -89,8 +88,9 @@
         </dependency>
         <dependency>
             <groupId>com.adobe.aem</groupId>
-            <artifactId>aem-api</artifactId>
-            <version>6.0.0.1</version>
+            <artifactId>uber-jar</artifactId>
+            <version>6.1.0</version>
+            <classifier>apis</classifier>
             <scope>test</scope>
         </dependency>
         <dependency>
